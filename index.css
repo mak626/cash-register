@@ -31,6 +31,10 @@ body {
   margin: 0.3rem;
 }
 
+.main h1 {
+  text-align: center;
+}
+
 .main img {
   width: 40%;
   margin: auto;
