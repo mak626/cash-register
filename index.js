@@ -27,7 +27,7 @@ nextButton.addEventListener("click", () => {
   reset();
   const billAmount = billAmountSelector.value;
 
-  if (isNaN(billAmount) || billAmount === "") {
+  if (isNaN(billAmount) || billAmount === "" || billAmount < 0) {
     invalidMessage.innerText = "Invalid Input";
     invalidSelector.style.display = "block";
     return;
@@ -83,7 +83,9 @@ calculateButton.addEventListener("click", () => {
     isNaN(billAmount) ||
     billAmount === "" ||
     cashRecievedAmount === "" ||
-    isNaN(cashRecievedAmount)
+    isNaN(cashRecievedAmount) ||
+    billAmount < 0 ||
+    cashRecievedAmount < 0
   ) {
     invalidMessage.innerText = "Invalid Input";
     invalidSelector.style.display = "block";
