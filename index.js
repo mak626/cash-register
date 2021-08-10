@@ -6,12 +6,6 @@ const invalidMessage = document.getElementById("message");
 const invalidSelector = document.getElementById("invalid-input");
 const tableSelector = document.getElementsByTagName("table")[0];
 
-const sumOfDigits = (dateString) => {
-  let sum = 0;
-  for (const x of dateString.split("")) sum += Number.parseInt(x, 10);
-  return sum;
-};
-
 const reset = () => {
   invalidSelector.style.display = "none";
   tableSelector.style.display = "none";
@@ -40,7 +34,6 @@ nextButton.addEventListener("click", () => {
 const calculateBalance = (billAmount, cashRecievedAmount) => {
   const arrayNoteAmt = [2000, 500, 100, 20, 10, 5, 1];
   let balanceAmt = [];
-
   let balance = cashRecievedAmount - billAmount;
 
   if (balance === 0) {
