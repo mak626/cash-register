@@ -90,21 +90,6 @@ body {
   text-align: center;
 }
 
-.answer {
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-
-.answer img {
-  width: 2rem;
-  margin: 0px;
-}
-
-.answer h4 {
-  margin-left: 1rem;
-}
-
 #submit,
 #cash_recieved {
   display: none;
