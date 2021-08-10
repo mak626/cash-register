@@ -1,0 +1,107 @@
+@import "./styles/table.css";
+
+:root {
+  font-family: Poppins;
+  --primary-color: #064e3b;
+  --secondary-color: #038b37;
+  --nav-color: white;
+  --font-color: black;
+  --off-white-color: rgb(197, 187, 187);
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin: 0.3rem;
+}
+
+.main img {
+  width: 40%;
+  margin: auto;
+}
+
+.main input {
+  display: block;
+  background-color: var(--nav-color);
+  border-radius: 4px;
+  height: fit-content;
+  width: auto;
+  margin: 1rem 0px;
+  font-size: 1.7rem;
+  padding: 10px;
+  border: none;
+  text-align: center;
+}
+
+.main input[type="text"] {
+  max-width: 14.7rem;
+}
+
+.main button {
+  width: 20%;
+  background-color: var(--nav-color);
+  border-radius: 4px;
+  height: fit-content;
+  width: auto;
+  font-size: 1.8rem;
+  margin: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  color: var(--primary-color);
+}
+
+.main button:hover {
+  color: var(--secondary-color);
+}
+
+.invalid-input {
+  display: none;
+  background-color: var(--nav-color);
+  padding: 5px 20px;
+  margin: auto;
+  border-radius: 4px;
+  max-width: 500px;
+  margin: 18px 30px;
+}
+
+.invalid-input h4 {
+  color: red;
+  text-align: center;
+}
+
+.answer {
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.answer img {
+  width: 2rem;
+  margin: 0px;
+}
+
+.answer h4 {
+  margin-left: 1rem;
+}
+
+#submit,
+#cash_recieved {
+  display: none;
+}
